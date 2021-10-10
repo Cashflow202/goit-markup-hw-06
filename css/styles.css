@@ -1,0 +1,503 @@
+:root {
+  --white-text-color: #ffffff;
+  --title-color: #212121;
+  --main-text-color: #757575;
+  --hover-color: #2196f3;
+  --bg-btn-color: #2196f3;
+  --btn-hover-color: #188ce8;
+  --bg-color: #2f303a;
+  --bg-section-color: #f5f4fa;
+  --clients-icon-color: #afb1b8;
+  --bg-network-footer-color: #44454e;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+/* Сброс точек в списках */
+.list {
+  list-style: none;
+}
+/* Сброс подчёркиваний ссылок */
+.link {
+  text-decoration: none;
+}
+/* Сброс маржинов и падингов h,p,ul */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Основной контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* Параметры секций */
+.section {
+  padding: 94px 0;
+}
+/* Визуальное скрытие */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* Центрирование текста */
+.text-center {
+  text-align: center;
+}
+/* Параметры img */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Блоки под иконки в Преимуществах */
+.bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-section-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+/* Маржин для иконок в кнопках */
+.button-icon {
+  margin-right: 10px;
+}
+/* Фон логотипов клиентов */
+.bg-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+/* Маржин для логотипов клиентов */
+.bg-clients:nth-last-child(n) {
+  margin-right: 30px;
+}
+
+/* Обёртка для хедера */
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+/* Рамка в хедере */
+.border {
+  border-bottom: 1px solid #ececec;
+}
+/* Синяя часть логотипа в хедере */
+.blue-logo-part {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+/* Тёмная часть доготипа в хедере */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+/* Отступ в лого */
+.margin-logo {
+  margin-right: 90px;
+}
+
+/* Ссылка лого в хедере */
+.header-link {
+  display: inline-block;
+  padding: 32px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+/* Ховер и фокус лого в хедере */
+.header-link:hover,
+.header-link:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+/* Отступы между ссылками в навигации хедера */
+.list-flex .m-left + .m-left {
+  margin-left: 50px;
+}
+/* Контакты хедера */
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+/* Родитель для каррента */
+.parent-current {
+  position: relative;
+}
+/* Подсветка ссылки выбранной страницы */
+.list-flex .link.current {
+  color: var(--btn-hover-color);
+}
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+/* Отступ первого элемента списка контактов в хедере */
+.header-contacts-item:first-child {
+  margin-right: 30px;
+}
+/* Ссылка на электронную почту в хедере */
+.contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+/* Заголовок Героя */
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+/* Кнопка: универсальные параметры */
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+/* Фон и падинг Героя */
+.hero {
+  background-color: var(--bg-color);
+  padding: 200px 0;
+}
+/* Кнопка Героя */
+.hero-button {
+  padding: 10px 32px;
+  min-width: 200px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--bg-btn-color);
+}
+/* Универсальные ховер и фокус кнопок */
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--btn-hover-color);
+}
+/* Заголовок преимуществ */
+.benefit-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+/* Пункт списка преимуществ */
+.benefit-item {
+  width: 270px;
+}
+/* Отступ между пунктами списка преимуществ */
+.benefit-item + .benefit-item {
+  margin-left: 30px;
+}
+/* Текст преимуществ */
+.benefit-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* Сброс верхнего паддинга в works */
+.works {
+  padding-top: 0;
+}
+/* Заголовок примеров работ */
+.title-text {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+/* Секция Команда  */
+.team {
+  background-color: var(--bg-section-color);
+}
+/* Карточка сотрудника */
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-text-color);
+}
+/* Флекс-контейнер для списков команды и работ */
+.team-list,
+.address,
+.works-list,
+.footer-network,
+.list-flex,
+.benefits-list,
+.footer-network {
+  display: flex;
+}
+/* Отступы для для пунктов списков работ и команды */
+.works-picture + .works-picture,
+.team-employee + .team-employee {
+  margin-left: 30px;
+}
+/* Пункты списка сотрудников */
+.team-employee {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* Враппер для employee */
+.employee-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+/* Имена сотрудников */
+.employee-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+/* Должности сотрудников */
+.employee-position {
+  color: var(--main-text-color);
+  margin-top: 10px;
+}
+/* Блоки соцсетей */
+.network {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px 0px 32px;
+}
+/* Геометрия для ссылок */
+.network-link,
+.portfolio-link {
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/* Иконка соцсетей */
+.network-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0px;
+  fill: var(--clients-icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* Фон для иконок соцсетей */
+.network-icon-bg {
+  background-color: var(--bg-network-footer-color);
+}
+/* Маржин иконок соцсетей */
+.network-icon:nth-last-child(n) {
+  margin-right: 10px;
+}
+/* Ховер и фокус иконок соцсетей */
+.network-icon:hover,
+.network-icon:focus {
+  background-color: var(--hover-color);
+  fill: var(--white-text-color);
+}
+/* Выравнивание по базовой линии */
+.baseline {
+  align-items: baseline;
+}
+/* Цвет логипов клиентов */
+.clients-icon {
+  fill: var(--clients-icon-color);
+}
+/* Ховер и фокус логотипов клиентов */
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--hover-color);
+  border-color: var(--hover-color);
+}
+/* footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color);
+}
+/* Левый блок в футере */
+.footer-leftblock {
+  margin-right: 70px;
+}
+/* Отступ для лого в футере */
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Ссылка на адрес на карте в футере */
+.address-contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* Ховер и фокус ссылки на адрес на карте в футере */
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--hover-color);
+}
+/* Цвет ссылки на карту в футере */
+.white {
+  color: var(--white-text-color);
+}
+/* Маржин на список в адресе */
+.address-list .list {
+  margin-bottom: 9px;
+}
+/* Сброс маржинов в списках */
+.list:nth-last-child(1) {
+  margin-bottom: 0;
+}
+/* Присоединяйтесь в футере  */
+.footer-join {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+/* ---------Страница Портфолио---------- */
+
+/* Список кнопок в портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+/* Отступ между кнопками фильтра */
+.filter-item + .filter-item {
+  margin-left: 8px;
+}
+/* Кнопки фильтра в портфолио */
+.filter-btn {
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+/* Ховер и фокус кнопок в фильтре */
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--btn-hover-color);
+  color: var(--white-text-color);
+}
+/* Падинги кнопок фильтра */
+.btn-all {
+  padding: 6px 22px;
+}
+/* Обёртка для портфолио  */
+.my-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Элементы портфолио */
+.portfolio-list {
+  width: 370px;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+/* Сброс марджинов для каждого третьего элемента портфолио */
+.portfolio-list:nth-child(3n) {
+  margin-right: 0;
+}
+/* Сброс отступов последних трёх элементов портфолио */
+.portfolio-list:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+/* Обёртка для текста в портфолио */
+.text-wrap {
+  padding: 20px 24px;
+  /* border: 1px solid #eeeeee; */
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+/* Заголовок Портфолио */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+/* Основной текст под каждым из проектов в портфолио */
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
