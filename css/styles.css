@@ -80,6 +80,7 @@ img {
 /* Маржин для иконок в кнопках */
 .button-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 /* Фон логотипов клиентов */
 .bg-clients {
@@ -145,7 +146,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--hover-color);
-  fill: var(--hover-color);
 }
 
 /* Отступы между ссылками в навигации хедера */
@@ -185,7 +185,6 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--main-text-color);
-  fill: var(--main-text-color);
 }
 /* Заголовок Героя */
 .hero-title {
@@ -205,7 +204,7 @@ img {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
 }
 /* Фон и падинг Героя */
 .hero {
@@ -367,7 +366,8 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+  background-color: 250ms var(--timing-function)
 }
 .network-link:hover,
 .network-link:focus {
@@ -389,11 +389,11 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover .portfolio-wrap::after {
+.portfolio-link:hover .portfolio-wrap::after, .portfolio-link:focus .portfolio-wrap::after{
   transform: translateY(0);
 }
 
-.portfolio-link:hover .overlay-text {
+.portfolio-link:hover .overlay-text, .portfolio-link:focus .overlay-text {
   transform: translateY(0);
 }
 /*  */
@@ -542,7 +542,7 @@ img {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 /* Ховер и фокус кнопок в фильтре */
 .filter-btn:hover,
