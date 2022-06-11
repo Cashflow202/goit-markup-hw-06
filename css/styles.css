@@ -366,8 +366,8 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: color 250ms var(--timing-function),
-  background-color: 250ms var(--timing-function)
+  transition: color 250ms var(--timing-function);
+  background-color: 250ms var(--timing-function);
 }
 .network-link:hover,
 .network-link:focus {
