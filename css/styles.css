@@ -15,6 +15,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  /* background: rgba(47, 48, 58, 0.8); */
 }
 
 /* Сброс точек в списках */
@@ -112,7 +116,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--hover-color);
 }
 /* Тёмная часть доготипа в хедере */
@@ -121,7 +124,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   color: var(--title-color);
 }
 /* Отступ в лого */
@@ -135,8 +138,6 @@ img {
   padding: 32px 0;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
 
@@ -245,9 +246,8 @@ img {
 .benefit-title {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  /* line-height: 1.14; */
+  /* letter-spacing: 0.03em; */
   text-transform: uppercase;
   color: var(--title-color);
 }
@@ -262,7 +262,6 @@ img {
 }
 /* Текст преимуществ */
 .benefit-text {
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -282,7 +281,7 @@ img {
   color: var(--title-color);
 }
 /* Белый фон для текста */
-.text-bg {
+/* .text-bg {
   position: absolute;
   display: flex;
   align-items: center;
@@ -292,7 +291,7 @@ img {
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-}
+} */
 /* Секция Команда  */
 .team {
   background-color: var(--bg-section-color);
@@ -334,6 +333,7 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 /* Имена сотрудников */
 .employee-text {
@@ -365,9 +365,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: color 250ms var(--timing-function);
-  background-color: 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+  background-color 250ms var(--timing-function);
 }
 .network-link:hover,
 .network-link:focus {
@@ -436,8 +435,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--clients-icon-color);
-
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function),
+  border-color 250ms var(--hover-color);
 }
 /* Ховер и фокус логотипов клиентов */
 .clients-icon:hover,
@@ -470,7 +469,6 @@ img {
 /* Ссылка на адрес на карте в футере */
 .address-contacts {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -496,21 +494,29 @@ img {
 }
 /* Присоединяйтесь в футере  */
 .white-upper-text {
+  position: absolute;
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  font-size: 14px;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+}
+.text-bg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  /* font-weight: 700; */
+  background: rgba(47, 48, 58, 0.8);  
 }
 .footer-join {
   /* display: flex; */
   margin-bottom: 20px;
-  /* font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-text-color); */
 }
 /* Иконки соцсетей в футере */
 .footer .network-link {
@@ -644,11 +650,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
-  visibility: visible;
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -662,13 +666,27 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-height: 300px;
-  min-width: 400px;
-  padding: 15px;
+  min-height: 528px;
+  min-width: 581px;
+  padding: 40px;
   background-color: var(--bg-section-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-btn:focus,.close-btn:hover {
+  cursor: pointer;
+  border: 1px solid var(--hover-color);
 }
