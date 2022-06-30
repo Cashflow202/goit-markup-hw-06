@@ -124,7 +124,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* letter-spacing: 0.03em; */
   color: var(--title-color);
 }
 /* Отступ в лого */
@@ -140,12 +139,10 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-color);
-
-  transition: color 250ms var(--timing-function);
 }
 /* Ховер и фокус лого в хедере */
-.header-link:hover,
-.header-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--hover-color);
 }
 
@@ -186,6 +183,7 @@ img {
   justify-content: center;
   align-items: center;
   color: var(--main-text-color);
+  transition: color 250ms var(--timing-function);
 }
 /* Заголовок Героя */
 .hero-title {
@@ -209,7 +207,6 @@ img {
 }
 /* Фон и падинг Героя */
 .hero {
-  /* background-color: var(--bg-color); */
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -225,6 +222,7 @@ img {
   background-position: center;
   background-size: cover;
 }
+
 /* Кнопка Героя */
 .hero-button {
   padding: 10px 32px;
@@ -234,14 +232,15 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   background-color: var(--bg-btn-color);
-
   transition: background-color 250ms var(--timing-function);
 }
+
 /* Универсальные ховер и фокус кнопок */
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--btn-hover-color);
 }
+
 /* Заголовок преимуществ */
 .benefit-title {
   margin-bottom: 10px;
@@ -255,20 +254,24 @@ img {
 .benefit-item {
   width: 270px;
 }
+
 /* Отступ между пунктами списка преимуществ */
 .benefit-item + .benefit-item {
   margin-left: 30px;
 }
+
 /* Текст преимуществ */
 .benefit-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
 /* Сброс верхнего паддинга в works */
 .works {
   padding-top: 0;
 }
+
 /* Заголовок примеров работ */
 .title-text {
   margin-bottom: 50px;
@@ -279,28 +282,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-/* Белый фон для текста */
-/* .text-bg {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-} */
+
 /* Секция Команда  */
 .team {
   background-color: var(--bg-section-color);
 }
+
 /* Карточка сотрудника */
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--white-text-color);
 }
+
 /* Флекс-контейнер для списков команды и работ */
 .team-list,
 .address,
@@ -311,6 +305,7 @@ img {
 .footer-network {
   display: flex;
 }
+
 /* Отступы для для пунктов списков работ и команды */
 .works-picture + .works-picture,
 .team-employee + .team-employee {
@@ -320,6 +315,7 @@ img {
 .works-picture {
   position: relative;
 }
+
 /* Пункты списка сотрудников */
 .team-employee {
   width: 270px;
@@ -327,6 +323,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 /* Враппер для employee */
 .employee-wrap {
   padding-top: 30px;
@@ -334,6 +331,7 @@ img {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
+
 /* Имена сотрудников */
 .employee-text {
   font-weight: 500;
@@ -343,43 +341,49 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
 /* Должности сотрудников */
 .employee-position {
   color: var(--main-text-color);
   margin-top: 10px;
 }
+
 /* Блоки соцсетей */
 .network {
   margin-top: 16px;
   display: flex;
   justify-content: center;
-  /* padding: 16px 32px 0px 32px; */
 }
+
 /* Геометрия для ссылок */
 .network-link {
   border-radius: 50%;
   color: var(--clients-icon-color);
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 250ms var(--timing-function),
   background-color 250ms var(--timing-function);
 }
+
 .network-link:hover,
 .network-link:focus {
   background-color: var(--hover-color);
   color: var(--white-text-color);
 }
+
 .network-link svg {
   fill: currentColor;
 }
+
 .portfolio-link {
   display: block;
 
   transition: box-shadow 250ms var(--timing-function);
 }
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   cursor: pointer;
@@ -394,64 +398,77 @@ img {
 .portfolio-link:hover .overlay-text, .portfolio-link:focus .overlay-text {
   transform: translateY(0);
 }
+
 /*  */
 .network-item {
   margin-right: 10px;
-  width: 44px;
-  height: 44px;
 }
+
 /* Фон для иконок соцсетей */
 .network-icon-bg {
   background-color: var(--bg-network-footer-color);
 }
+
 /* Маржин иконок соцсетей */
 .network-icon:nth-last-child(n) {
   margin-right: 10px;
 }
+
 /* Ховер и фокус иконок соцсетей */
 .network-icon:hover,
 .network-icon:focus {
   background-color: var(--hover-color);
   fill: var(--white-text-color);
 }
+
 /* Выравнивание по базовой линии */
 .baseline {
   align-items: baseline;
 }
+
 /* Логотипы клиентов геометрия */
 .clients {
   margin-right: 30px;
-  width: 170px;
-  height: 92px;
 }
+
 /* Цвет логипов клиентов */
 .clients-icon {
   border-radius: 4px;
   border: 1px solid var(--clients-icon-color);
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
   align-items: center;
   justify-content: center;
   color: var(--clients-icon-color);
   transition: color 250ms var(--timing-function),
   border-color 250ms var(--timing-function);
 }
+
 .clients-color {
   fill: currentColor;
 }
+
 /* Ховер и фокус логотипов клиентов */
 .clients-icon:hover,
 .clients-icon:focus {
   color: var(--hover-color);
   border-color: var(--hover-color);
 }
+
 /* footer */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color);
 }
+
+.footer-network {
+  margin-bottom: 20px;
+  margin-top: 16px;
+  display: flex;
+}
+
 /* Левый блок в футере */
 .footer-leftblock {
   margin-right: 70px;
@@ -477,23 +494,28 @@ img {
 
   transition: color 250ms var(--timing-function);
 }
+
 /* Ховер и фокус ссылки на адрес на карте в футере */
 .address-contacts:hover,
 .address-contacts:focus {
   color: var(--hover-color);
 }
+
 /* Цвет ссылки на карту в футере */
 .white {
   color: var(--white-text-color);
 }
+
 /* Маржин на список в адресе */
 .address-list .list {
   margin-bottom: 9px;
 }
+
 /* Сброс маржинов в списках */
 .clients:last-child {
   margin-right: 0;
 }
+
 /* Присоединяйтесь в футере  */
 .white-upper-text {
   position: absolute;
@@ -507,23 +529,22 @@ img {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
+  line-height: 1.17;
 }
 
 .footer-join {
-  display: flex;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 /* Иконки соцсетей в футере */
 .footer .network-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-text-color);
   transition: background-color 250ms var(--timing-function);
 }
+
 /* Ховер и фокус на иконки соцсетей в футере */
 .footer .network-link:hover,
 .footer .network-link:focus {
@@ -538,10 +559,12 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 /* Отступ между кнопками фильтра */
 .filter-item + .filter-item {
   margin-left: 8px;
 }
+
 /* Кнопки фильтра в портфолио */
 .filter-btn {
   font-weight: 500;
@@ -549,6 +572,7 @@ img {
   letter-spacing: 0.03em;
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
+
 /* Ховер и фокус кнопок в фильтре */
 .filter-btn:hover,
 .filter-btn:focus {
@@ -557,15 +581,18 @@ img {
   background-color: var(--btn-hover-color);
   color: var(--white-text-color);
 }
+
 /* Падинги кнопок фильтра */
 .btn-all {
   padding: 6px 22px;
 }
+
 /* Обёртка для портфолио  */
 .my-portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 /* Элементы портфолио */
 .portfolio-list {
   width: 370px;
@@ -573,22 +600,25 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 /* Сброс марджинов для каждого третьего элемента портфолио */
 .portfolio-list:nth-child(3n) {
   margin-right: 0;
 }
+
 /* Сброс отступов последних трёх элементов портфолио */
 .portfolio-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 /* Обёртка для текста в портфолио */
 .text-wrap {
   padding: 20px 24px;
-  /* border: 1px solid #eeeeee; */
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
+
 /* Заголовок Портфолио */
 .portfolio-title {
   font-weight: 700;
@@ -597,6 +627,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
+
 /* Основной текст под каждым из проектов в портфолио */
 .portfolio-text {
   font-size: 16px;
@@ -604,11 +635,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+
 .portfolio-wrap {
   position: relative;
   display: block;
   overflow: hidden;
 }
+
 /* Оверлей для картинки в портфолио */
 .portfolio-wrap::after {
   display: inline-block;
@@ -622,6 +655,7 @@ img {
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--timing-function);
 }
+
 .overlay-text {
   position: absolute;
   z-index: 1;
@@ -639,6 +673,7 @@ img {
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--timing-function);
 }
+
 /* Стили для модального окна */
 .backdrop {
   position: fixed;
@@ -671,7 +706,53 @@ img {
   background-color: var(--bg-section-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-bottom: 28px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  margin-bottom: 28px;
+
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  background-color: transparent;
+  margin-bottom: 28px;
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
@@ -685,6 +766,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .close-btn:focus,.close-btn:hover {
   cursor: pointer;
   border: 1px solid var(--hover-color);
