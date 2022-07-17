@@ -22,14 +22,19 @@ body {
 }
 
 /* Сброс точек в списках */
+
 .list {
   list-style: none;
 }
+
 /* Сброс подчёркиваний ссылок */
+
 .link {
   text-decoration: none;
 }
+
 /* Сброс маржинов и падингов h,p,ul */
+
 h1,
 h2,
 h3,
@@ -41,18 +46,24 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 /* Основной контейнер */
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+
 /* Параметры секций */
+
 .section {
   padding: 94px 0;
 }
+
 /* Визуальное скрытие */
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -60,17 +71,23 @@ ul {
   height: 1px;
   margin: -1px;
 }
+
 /* Центрирование текста */
+
 .text-center {
   text-align: center;
 }
+
 /* Параметры img */
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
+
 /* Блоки под иконки в Преимуществах */
+
 .bg-icon {
   display: flex;
   justify-content: center;
@@ -81,12 +98,16 @@ img {
   height: 120px;
   margin-bottom: 30px;
 }
+
 /* Маржин для иконок в кнопках */
+
 .button-icon {
   margin-right: 10px;
   fill: currentColor;
 }
+
 /* Фон логотипов клиентов */
+
 .bg-clients {
   display: flex;
   justify-content: center;
@@ -97,28 +118,37 @@ img {
   width: 170px;
   height: 92px;
 }
+
 /* Маржин для логотипов клиентов */
+
 .bg-clients:nth-last-child(n) {
   margin-right: 30px;
 }
 
 /* Обёртка для хедера */
+
 .header-wrap {
   display: flex;
   align-items: center;
 }
+
 /* Рамка в хедере */
+
 .border {
   border-bottom: 1px solid #ececec;
 }
+
 /* Синяя часть логотипа в хедере */
+
 .blue-logo-part {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--hover-color);
 }
+
 /* Тёмная часть доготипа в хедере */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -126,12 +156,15 @@ img {
   line-height: 1.19;
   color: var(--title-color);
 }
+
 /* Отступ в лого */
+
 .margin-logo {
   margin-right: 90px;
 }
 
 /* Ссылка лого в хедере */
+
 .header-link {
   display: inline-block;
   padding: 32px 0;
@@ -140,22 +173,29 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+
 /* Ховер и фокус лого в хедере */
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--hover-color);
 }
 
 /* Отступы между ссылками в навигации хедера */
+
 .list-flex .m-left + .m-left {
   margin-left: 50px;
 }
+
 /* Контакты хедера */
+
 .header-contacts {
   display: flex;
   margin-left: auto;
 }
+
 /* Подсветка ссылки выбранной страницы */
+
 .list-flex .link.current {
   color: var(--btn-hover-color);
   position: relative;
@@ -174,10 +214,12 @@ img {
   border-radius: 2px;
 }
 /* Отступ первого элемента списка контактов в хедере */
+
 .header-contacts-item:first-child {
   margin-right: 30px;
 }
 /* Ссылка на электронную почту в хедере */
+
 .contacts-link {
   display: flex;
   justify-content: center;
@@ -185,7 +227,9 @@ img {
   color: var(--main-text-color);
   transition: color 250ms var(--timing-function);
 }
+
 /* Заголовок Героя */
+
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
@@ -196,7 +240,9 @@ img {
   text-transform: uppercase;
   color: var(--white-text-color);
 }
+
 /* Кнопка: универсальные параметры */
+
 .btn {
   display: inline-block;
   font-size: 16px;
@@ -205,7 +251,9 @@ img {
   border-radius: 4px;
   border: none;
 }
+
 /* Фон и падинг Героя */
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -223,8 +271,9 @@ img {
   background-size: cover;
 }
 
-/* Кнопка Героя */
-.hero-button {
+/* Кнопка с базовыми стилями */
+
+.base-button {
   padding: 10px 32px;
   min-width: 200px;
   font-weight: 700;
@@ -236,12 +285,14 @@ img {
 }
 
 /* Универсальные ховер и фокус кнопок */
-.hero-button:hover,
-.hero-button:focus {
+
+.base-button:hover,
+.base-button:focus {
   background-color: var(--btn-hover-color);
 }
 
 /* Заголовок преимуществ */
+
 .benefit-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -251,16 +302,19 @@ img {
 }
 
 /* Пункт списка преимуществ */
+
 .benefit-item {
   width: 270px;
 }
 
 /* Отступ между пунктами списка преимуществ */
+
 .benefit-item + .benefit-item {
   margin-left: 30px;
 }
 
 /* Текст преимуществ */
+
 .benefit-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -268,11 +322,13 @@ img {
 }
 
 /* Сброс верхнего паддинга в works */
+
 .works {
   padding-top: 0;
 }
 
 /* Заголовок примеров работ */
+
 .title-text {
   margin-bottom: 50px;
   font-weight: 700;
@@ -284,11 +340,13 @@ img {
 }
 
 /* Секция Команда  */
+
 .team {
   background-color: var(--bg-section-color);
 }
 
 /* Карточка сотрудника */
+
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -296,6 +354,7 @@ img {
 }
 
 /* Флекс-контейнер для списков команды и работ */
+
 .team-list,
 .address,
 .works-list,
@@ -307,16 +366,14 @@ img {
 }
 
 /* Отступы для для пунктов списков работ и команды */
+
 .works-picture + .works-picture,
 .team-employee + .team-employee {
   margin-left: 30px;
 }
 
-.works-picture {
-  position: relative;
-}
-
 /* Пункты списка сотрудников */
+
 .team-employee {
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -325,6 +382,7 @@ img {
 }
 
 /* Враппер для employee */
+
 .employee-wrap {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -333,6 +391,7 @@ img {
 }
 
 /* Имена сотрудников */
+
 .employee-text {
   font-weight: 500;
   font-size: 16px;
@@ -343,12 +402,14 @@ img {
 }
 
 /* Должности сотрудников */
+
 .employee-position {
   color: var(--main-text-color);
   margin-top: 10px;
 }
 
 /* Блоки соцсетей */
+
 .network {
   margin-top: 16px;
   display: flex;
@@ -356,6 +417,7 @@ img {
 }
 
 /* Геометрия для ссылок */
+
 .network-link {
   border-radius: 50%;
   color: var(--clients-icon-color);
@@ -405,16 +467,19 @@ img {
 }
 
 /* Фон для иконок соцсетей */
+
 .network-icon-bg {
   background-color: var(--bg-network-footer-color);
 }
 
 /* Маржин иконок соцсетей */
+
 .network-icon:nth-last-child(n) {
   margin-right: 10px;
 }
 
 /* Ховер и фокус иконок соцсетей */
+
 .network-icon:hover,
 .network-icon:focus {
   background-color: var(--hover-color);
@@ -422,16 +487,19 @@ img {
 }
 
 /* Выравнивание по базовой линии */
+
 .baseline {
   align-items: baseline;
 }
 
 /* Логотипы клиентов геометрия */
+
 .clients {
   margin-right: 30px;
 }
 
 /* Цвет логипов клиентов */
+
 .clients-icon {
   border-radius: 4px;
   border: 1px solid var(--clients-icon-color);
@@ -450,6 +518,7 @@ img {
 }
 
 /* Ховер и фокус логотипов клиентов */
+
 .clients-icon:hover,
 .clients-icon:focus {
   color: var(--hover-color);
@@ -457,6 +526,7 @@ img {
 }
 
 /* footer */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -465,16 +535,19 @@ img {
 
 .footer-network {
   margin-bottom: 20px;
-  margin-top: 16px;
+  margin-top: 20px;
+  margin-right: 95px;
   display: flex;
 }
 
 /* Левый блок в футере */
+
 .footer-leftblock {
   margin-right: 70px;
 }
 
 /* Отступ для лого в футере */
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -486,6 +559,7 @@ img {
 }
 
 /* Ссылка на адрес на карте в футере */
+
 .address-contacts {
   font-style: normal;
   line-height: 1.71;
@@ -496,27 +570,32 @@ img {
 }
 
 /* Ховер и фокус ссылки на адрес на карте в футере */
+
 .address-contacts:hover,
 .address-contacts:focus {
   color: var(--hover-color);
 }
 
 /* Цвет ссылки на карту в футере */
+
 .white {
   color: var(--white-text-color);
 }
 
 /* Маржин на список в адресе */
+
 .address-list .list {
   margin-bottom: 9px;
 }
 
 /* Сброс маржинов в списках */
+
 .clients:last-child {
   margin-right: 0;
 }
 
 /* Присоединяйтесь в футере  */
+
 .white-upper-text {
   position: absolute;
   display: flex;
@@ -538,7 +617,10 @@ img {
   color: #FFFFFF;
 }
 
+
+
 /* Иконки соцсетей в футере */
+
 .footer .network-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-text-color);
@@ -546,14 +628,37 @@ img {
 }
 
 /* Ховер и фокус на иконки соцсетей в футере */
+
 .footer .network-link:hover,
 .footer .network-link:focus {
   background-color: var(--btn-hover-color);
 }
 
+.footer-form-input {
+  margin-right: 12px;
+  padding-left: 16px;
+  outline: none;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footer-mailing {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-mailing {
+  padding: 10px 62px 10px 29px;
+}
+
 /* ---------Страница Портфолио---------- */
 
 /* Список кнопок в портфолио */
+
 .filter {
   display: flex;
   justify-content: center;
@@ -561,11 +666,13 @@ img {
 }
 
 /* Отступ между кнопками фильтра */
+
 .filter-item + .filter-item {
   margin-left: 8px;
 }
 
 /* Кнопки фильтра в портфолио */
+
 .filter-btn {
   font-weight: 500;
   line-height: 1.6;
@@ -574,6 +681,7 @@ img {
 }
 
 /* Ховер и фокус кнопок в фильтре */
+
 .filter-btn:hover,
 .filter-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -583,35 +691,40 @@ img {
 }
 
 /* Падинги кнопок фильтра */
+
 .btn-all {
   padding: 6px 22px;
 }
 
 /* Обёртка для портфолио  */
+
 .my-portfolio-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* Элементы портфолио */
+
 .portfolio-list {
   width: 370px;
-
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
 /* Сброс марджинов для каждого третьего элемента портфолио */
+
 .portfolio-list:nth-child(3n) {
   margin-right: 0;
 }
 
 /* Сброс отступов последних трёх элементов портфолио */
+
 .portfolio-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
 /* Обёртка для текста в портфолио */
+
 .text-wrap {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
@@ -620,6 +733,7 @@ img {
 }
 
 /* Заголовок Портфолио */
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -629,6 +743,7 @@ img {
 }
 
 /* Основной текст под каждым из проектов в портфолио */
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
@@ -643,6 +758,7 @@ img {
 }
 
 /* Оверлей для картинки в портфолио */
+
 .portfolio-wrap::after {
   display: inline-block;
   content: "";
@@ -675,6 +791,7 @@ img {
 }
 
 /* Стили для модального окна */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -700,13 +817,33 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  height: 581px;
   width: 528px;
   padding: 40px;
   background-color: var(--bg-section-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+
+.privacy {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 28px;
 }
 
 .modal-title {
@@ -720,37 +857,121 @@ img {
 }
 
 .modal-input {
+  padding-left: 42px;
+  outline: none;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
-  margin-bottom: 28px;
+}
+
+.modal-input:focus, .modal-input:hover,
+.modal-text-area:focus, .modal-text-area:hover {
+  border: 1px solid var(--hover-color);
+  transition: 250ms;
+}
+
+.modal-input:focus + .input-icon,
+.modal-input:hover + .input-icon {
+  fill: var(--hover-color);
+  transition: 250ms;
+}
+
+.input:hover + .label,
+.input:focus + .label {
+  border: 1px solid var(--hover-color);
+  border-radius: 4px;
+  color: var(--hover-color);
+  transition: 250ms;
 }
 
 .modal-label {
+  display: block;
+  font-size: 12px;
   margin-bottom: 4px;
 }
 
-.modal-btn {
-  display: block;
-  margin: 0 auto;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background-color: transparent;
-  margin-bottom: 28px;
-
-}
-
-.modal-comment {
+.modal-text-area {
+  padding: 12px 16px;
+  margin-bottom: 20px;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
-  margin-bottom: 28px;
+  resize: none;
+  outline: none;
+}
+  
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.check-text {
+  font-weight: 400;
+  color: #757575;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.check-text span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  margin-right: 5px;
+  display:block;
+}
+
+.check-icon {
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: transparent;
+}
+
+.mailing-icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--hover-color);
+  border: none;
+}
+
+.input-check:checked + .check-text .check-icon {
+  fill: #FFFFFF;
+}
+
+.check-text a {
+  color: rgba(33, 150, 243, 1);
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  background-color: var(--bg-btn-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  color: var(--white-text-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
+  transition: 250ms;
+}
+
+input[name="acception"] {
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .close-btn {
@@ -767,7 +988,8 @@ img {
   justify-content: center;
 }
 
-.close-btn:focus,.close-btn:hover {
+.close-btn:focus,
+.close-btn:hover {
   cursor: pointer;
   border: 1px solid var(--hover-color);
 }
